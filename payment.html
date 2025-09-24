@@ -1,0 +1,451 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>AuroraTV</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Favicon and Logo Start -->
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <!-- Favicon & Logo End -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/payment.css">
+
+    <!-- App & fonts Start -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- App & fonts End -->
+
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- SEO Start -->
+    <meta name="description"
+        content="Aurora Media Group provides innovative media solutions. Aurora Media Group is a Caesar Capital subsidiary that is responsible for media properties, encompassing the streaming network as a whole, as well as day-to-day operation of the company's sports-oriented cable network and other properties such as those shared from other platforms.">
+    <meta name="keywords" content="media, marketing, advertising, Aurora Media Group">
+    <meta name="robots" content="index,follow">
+    <!-- SEO End -->
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+
+        <!-- Nav Start -->
+        <nav class="nav">
+
+            <a href="/dashboard.html">
+                <svg class="ham hamRotate ham8" viewBox="0 0 24 24" width="80">
+                    <path class="line" d="M 6 12 l 12 0 M 6 12 l 4 -4 M 6 12 l 4 4" />
+                </svg>
+            </a>
+
+            <img src="img/auroratvlogomainWL.png" alt="Logo" class="logo">
+
+            <div class="header-buttons">
+                <button class="africa-button"><img src="img/africa.png" alt="arrowdown-button"></button>
+            </div>
+
+        </nav>
+        <!-- Nav End -->
+
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <div class="main">
+
+        <h1>Choose Your Plan</h1>
+
+        <h4>Step into AuroraTV: your portal to a curated collection of exclusive melanated content. Immerse in
+            unparalleled narratives that redefine viewing experiences. Experience the extraordinary, the captivating -
+            the new dawn in streaming. Welcome to AuroraTV.</h4>
+
+        <div class="switch">
+            <input name="radio" type="radio" value="monthly" id="optionone" checked>
+            <label for="optionone">Monthly</label>
+
+            <input name="radio" type="radio" value="yearly" id="optiontwo">
+            <label for="optiontwo" class="right">Yearly</label>
+
+            <span aria-hidden="true"></span>
+        </div>
+
+        <div class="main_card monthly">
+
+
+            <div class="select-cards">
+
+                <div class="select" data-selected="true">
+
+                    <div class="titles">
+
+                        <h2>With Ads</h2>
+                        <h3>$9.99</h3>
+                        <!-- <h5>save 16%</h5> -->
+                        <h4>Watch everything with limited ads for a lower price.</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="select">
+
+                    <div class="titles">
+
+                        <h2>Ad Free</h2>
+                        <h3>$14.99</h3>
+                        <!-- <h5>save 14%</h5> -->
+                        <h4>Download your favourites to watch on-the-go. Stream in 4k UHD (as available).</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="select-btn">Select Plan</button>
+
+        </div>
+
+        <div class="main_card yearly">
+
+
+            <div class="select-cards">
+
+                <div class="select" data-selected="true">
+
+                    <div class="titles">
+
+                        <h2>With Ads</h2>
+                        <h3>$110.00</h3>
+                        <h5>save 16%</h5>
+                        <h4>Watch everything with limited ads for a lower price.</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="select">
+
+                    <div class="titles">
+
+                        <h2>Ad Free</h2>
+                        <h3>$170.00</h3>
+                        <h5>save 14%</h5>
+                        <h4>Download your favourites to watch on-the-go. Stream in 4k UHD (as available).</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="select-btn">Select Plan</button>
+
+        </div>
+
+    </div>
+    <!-- Main End -->
+
+    <!-- Card Popup Start -->
+    <!-- <div id="checkout" class="checkout modal">
+        <div class="modal-content">
+    <div class="credit-card-box">
+        <div class="flip">
+            <div class="front">
+                <div class="chip"></div>
+                <div class="logo">
+                    <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47.834px" height="47.834px"
+                        viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+                        <g>
+                            <g>
+                                <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
+                                   c0.447,0,4.414,0.006,4.979,0.006c0.116,0.498,0.474,2.137,0.474,2.137h3.607L44.688,16.814z M39.893,26.01
+                                   c0.32-0.819,1.549-3.987,1.549-3.987c-0.021,0.039,0.317-0.825,0.518-1.362l0.262,1.23c0,0,0.745,3.406,0.901,4.119H39.893z
+                                   M34.146,26.404c-0.028,2.963-2.684,4.875-6.771,4.875c-1.743-0.018-3.422-0.361-4.332-0.76l0.547-3.193l0.501,0.228
+                                   c1.277,0.532,2.104,0.747,3.661,0.747c1.117,0,2.313-0.438,2.325-1.393c0.007-0.625-0.501-1.07-2.016-1.77
+                                   c-1.476-0.683-3.43-1.827-3.405-3.876c0.021-2.773,2.729-4.708,6.571-4.708c1.506,0,2.713,0.31,3.483,0.599l-0.526,3.092
+                                   l-0.351-0.165c-0.716-0.288-1.638-0.566-2.91-0.546c-1.522,0-2.228,0.634-2.228,1.227c-0.008,0.668,0.824,1.108,2.184,1.77
+                                   C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
+                                   C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
+                                   c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
+                                   h-3.888L19.153,16.8z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="number"></div>
+                <div class="card-holder">
+                    <label>Card holder</label>
+                    <div></div>
+                </div>
+                <div class="card-expiration-date">
+                    <label>Expires</label>
+                    <div></div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="strip"></div>
+                <div class="logo">
+                    <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47.834px" height="47.834px"
+                        viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+                        <g>
+                            <g>
+                                <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
+                                   c0.447,0,4.414,0.006,4.979,0.006c0.116,0.498,0.474,2.137,0.474,2.137h3.607L44.688,16.814z M39.893,26.01
+                                   c0.32-0.819,1.549-3.987,1.549-3.987c-0.021,0.039,0.317-0.825,0.518-1.362l0.262,1.23c0,0,0.745,3.406,0.901,4.119H39.893z
+                                   M34.146,26.404c-0.028,2.963-2.684,4.875-6.771,4.875c-1.743-0.018-3.422-0.361-4.332-0.76l0.547-3.193l0.501,0.228
+                                   c1.277,0.532,2.104,0.747,3.661,0.747c1.117,0,2.313-0.438,2.325-1.393c0.007-0.625-0.501-1.07-2.016-1.77
+                                   c-1.476-0.683-3.43-1.827-3.405-3.876c0.021-2.773,2.729-4.708,6.571-4.708c1.506,0,2.713,0.31,3.483,0.599l-0.526,3.092
+                                   l-0.351-0.165c-0.716-0.288-1.638-0.566-2.91-0.546c-1.522,0-2.228,0.634-2.228,1.227c-0.008,0.668,0.824,1.108,2.184,1.77
+                                   C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
+                                   C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
+                                   c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
+                                   h-3.888L19.153,16.8z" />
+                            </g>
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="ccv">
+                    <label>CCV</label>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="form" autocomplete="off" novalidate>
+        <fieldset>
+            <label for="card-number">Card Number</label>
+            <input type="num" id="card-number" class="input-cart-number" maxlength="4" />
+            <input type="num" id="card-number-1" class="input-cart-number" maxlength="4" />
+            <input type="num" id="card-number-2" class="input-cart-number" maxlength="4" />
+            <input type="num" id="card-number-3" class="input-cart-number" maxlength="4" />
+        </fieldset>
+        <fieldset>
+            <label for="card-holder">Card holder</label>
+            <input type="text" id="card-holder" />
+        </fieldset>
+        <fieldset class="fieldset-expiration">
+            <label for="card-expiration-month">Expiration date</label>
+            <div class="select">
+                <select id="card-expiration-month">
+                    <option></option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+            </div>
+            <div class="select">
+                <select id="card-expiration-year">
+                    <option></option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                    <option>2031</option>
+                    <option>2032</option>
+                    <option>2033</option>
+                    <option>2034</option>
+                    <option>2035</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset-ccv">
+            <label for="card-ccv">CCV</label>
+            <input type="text" id="card-ccv" maxlength="3" />
+        </fieldset>
+        <button onclick="location.href='/dashboard.html'" class="btn">submit</button>
+    </form>
+    </div>
+    </div> -->
+
+    <!-- Card Popup End -->
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Radio JS Start -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var switchLabels = document.querySelectorAll('.switch label');
+
+            switchLabels.forEach(function (label) {
+                label.addEventListener('click', function () {
+                    var indicator = this.parentNode.querySelector('span');
+
+                    if (this.classList.contains('right')) {
+                        indicator.classList.add('right');
+                    } else {
+                        indicator.classList.remove('right');
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Radio JS Start -->
+
+    <!-- Selector JS Start -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // get references to the radio inputs, and the monthly and yearly divs
+            var monthlyInput = document.getElementById('optionone');
+            var yearlyInput = document.getElementById('optiontwo');
+            var monthlyCard = document.querySelector('.main_card.monthly');
+            var yearlyCard = document.querySelector('.main_card.yearly');
+
+            // function to update visibility based on which radio button is checked
+            function updateCardVisibility() {
+                if (monthlyInput.checked) {
+                    monthlyCard.style.display = 'block';
+                    yearlyCard.style.display = 'none';
+                } else if (yearlyInput.checked) {
+                    monthlyCard.style.display = 'none';
+                    yearlyCard.style.display = 'block';
+                }
+            }
+
+            // initial visibility update
+            updateCardVisibility();
+
+            // add event listeners to the radio buttons to update visibility when they are clicked
+            monthlyInput.addEventListener('click', updateCardVisibility);
+            yearlyInput.addEventListener('click', updateCardVisibility);
+        });
+    </script>
+    <!-- Selector JS End -->
+
+    <!-- Card Popup JS Start -->
+    <script>
+        const selectBtn = document.querySelector(".select-btn");
+        const checkoutDiv = document.querySelector("#checkout");
+        const closeBtn = document.querySelector("#close-btn");
+
+        checkoutDiv.style.display = "none";
+
+        selectBtn.addEventListener("click", function () {
+            checkoutDiv.style.display = "block";
+        });
+
+        closeBtn.addEventListener("click", function () {
+            checkoutDiv.style.display = "none";
+        });
+
+        window.addEventListener('click', function (event) {
+            if (event.target === checkoutDiv || event.target === closeBtn) {
+                checkoutDiv.style.display = "none";
+            }
+        });
+    </script>
+    <!-- Card Popup JS End -->
+
+    <!-- Card Submission Popup Start -->
+    <script>
+        $(document).ready(function () {
+            $('.input-cart-number').on('keyup change', function () {
+                $t = $(this);
+                if ($t.val().length > 3) {
+                    $t.next().focus();
+                }
+                var card_number = '';
+                $('.input-cart-number').each(function () {
+                    card_number += $(this).val() + ' ';
+                    if ($(this).val().length == 4) {
+                        $(this).next().focus();
+                    }
+                })
+                $('.credit-card-box .number').html(card_number);
+            });
+
+            $('#card-holder').on('keyup change', function () {
+                $t = $(this);
+                $('.credit-card-box .card-holder div').html($t.val());
+            });
+
+            $('#card-expiration-month, #card-expiration-year').change(function () {
+                m = $('#card-expiration-month option').index($('#card-expiration-month option:selected'));
+                m = (m < 10) ? '0' + m : m;
+                y = $('#card-expiration-year').val().substr(2, 2);
+                $('.card-expiration-date div').html(m + '/' + y);
+            })
+
+            $('#card-ccv').on('focus', function () {
+                $('.credit-card-box').addClass('hover');
+            }).on('blur', function () {
+                $('.credit-card-box').removeClass('hover');
+            }).on('keyup change', function () {
+                $('.ccv div').html($(this).val());
+            });
+
+            setTimeout(function () {
+                $('#card-ccv').focus().delay(1000).queue(function () {
+                    $(this).blur().dequeue();
+                });
+            }, 500);
+        });
+    </script>
+    <!-- Card Submission Popup End -->
+
+    <!-- Firebase Start -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDU-i-G3-tJ7AHuEcdnLn-xlowbQdxyOdM",
+            authDomain: "auroratelevisionorg.firebaseapp.com",
+            projectId: "auroratelevisionorg",
+            storageBucket: "auroratelevisionorg.appspot.com",
+            messagingSenderId: "801515496273",
+            appId: "1:801515496273:web:2361810bbfc3b3e94a2970",
+            measurementId: "G-VVRB5HENYN"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <!-- Firebase End -->
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

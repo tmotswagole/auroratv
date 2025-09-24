@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat|Nunito+Sans:400,700");
+@import url(css/fontawesome-free-6.4.0-web/font-awesome.css);
+
+:root {
+  --bg: #edf2f0;
+  --neu-1: #ecf0f3;
+  --neu-2: #d1d9e6;
+  --white: #f9f9f9;
+  --gray: #a0a5a8;
+  --black: #000;
+  --aurora-blue: #080bc9;
+  --aurora-green: #54d748;
+  --transition: 1.25s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  background: var(--black);
+  color: var(--white);
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/img/background/desktop-back2500x2500.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*========== HEADER ================*/
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 600px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  position: relative;
+}
+
+.logo {
+  width: 170px;
+  cursor: pointer;
+}
+
+nav button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.africa-button {
+  display: block;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  height: auto;
+}
+
+.africa-button img {
+  width: 50px;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--white);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/*========== DETAILS ================*/
+
+#background {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-container {
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  left: auto;
+  right: auto;
+  box-shadow: 2px 5px 15px 1px #04060a;
+}
+
+@media only screen and (min-width: 320px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .card-container {
+    flex-wrap: nowrap;
+  }
+}
+
+.poster-container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+#poster {
+  /* -webkit-filter: contrast(120%);
+  transform: scale(1.25);
+  transform-origin: 70% 19%; */
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/images/coming-soon500x500(3840x2160px).gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.card-description {
+  letter-spacing: 0.3em;
+  background: var(--black);
+  padding: 1.5em;
+  line-height: 2em;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  display: flex;
+  flex-flow: column;
+  /* justify-content: space-around; */
+  width: 100%;
+  height: 100%;
+}
+
+.card-description:before {
+  content: "";
+  position: absolute;
+  top: 585px; /* You can adjust this value to set where the blend starts */
+  left: 25.3%;
+  right: auto;
+  margin-right: 5%;
+  height: 40px; /* This sets the blend height */
+  width: 50.3%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--black));
+}
+
+.card-description p,
+.card-description .rating,
+.card-description .buttons {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.card-description p {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.card-description .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-description .span {
+  color: var(--aurora-green);
+  font-weight: 700;
+}
+
+.card-description label {
+  font-family: FontAwesome, sans-serif;
+  font-size: 1.4em;
+  color: #ffd700;
+}
+
+.card-description label:before {
+  content: "\f005";
+}
+
+.card-description .buttons {
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-description .buttons .button {
+  transition: 0.4s;
+  cursor: pointer;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding: 1em;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: initial;
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 11px;
+  height: 40px;
+}
+
+.card-description .buttons a,
+.card-description .buttons a:link,
+.card-description .buttons a:visited,
+.card-description .buttons a:hover,
+.card-description .buttons a:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+.card-description .buttons .play {
+  border: none;
+  background: var(--aurora-blue);
+  width: 24%;
+  margin-left: 18%;
+}
+
+.card-description .buttons .play:after {
+  font-family: FontAwesome, sans-serif;
+  font-size: 1.5em;
+  content: "\f04b";
+}
+
+.card-description .buttons .play:hover {
+  color: var(--aurora-green);
+  transform: scale(1.1);
+}
+
+.card-description .buttons .add {
+  width: 24%;
+  margin-right: 18%;
+}
+
+.card-description .buttons .add:before {
+  font-family: FontAwesome, sans-serif;
+  font-size: 1.5em;
+  padding-right: 4px;
+  content: "\f067";
+}
+
+.card-description .buttons .add:hover {
+  border: 2px solid var(--aurora-green);
+  color: var(--aurora-green);
+  transform: scale(1.1);
+}
+
+/*========== RESPONSIVE DESIGN ================*/
+
+@media (max-width: 600px) {
+  .card-description .rating {
+    display: block;
+  }
+
+  .card-container {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card-description:before {
+    content: "";
+    position: absolute;
+    top: 540px; /* You can adjust this value to set where the blend starts */
+    left: 5%;
+    right: auto;
+    margin-right: 5%;
+    height: 40px; /* This sets the blend height */
+    width: 90%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      var(--black)
+    );
+  }
+
+  .card-description .buttons .button {
+    height: 50px;
+  }
+
+  .card-description .buttons .play {
+    width: 45%;
+    margin-left: 5%;
+  }
+
+  .card-description .buttons .add {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+
+/* CSS for 688x1031 */
+@media (min-width: 688px) and (min-height: 1031px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 393x786 */
+@media (min-width: 393px) and (min-height: 786px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 414x896 */
+@media (min-width: 414px) and (min-height: 896px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 375x812 */
+@media (min-width: 375px) and (min-height: 812px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 412x846 */
+@media (min-width: 412px) and (min-height: 846px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 1024x800 */
+@media (min-width: 1024px) and (min-height: 800px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 360x740 */
+@media (min-width: 360px) and (min-height: 740px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 414x736 */
+@media (min-width: 414px) and (min-height: 736px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 768x1024 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  /* Add your CSS rules for this screen size */
+}

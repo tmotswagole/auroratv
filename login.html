@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>AuroraTV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Logo Start -->
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <!-- Favicon & Logo End -->
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- App & fonts Start -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- Load GSAP library -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script> -->
+    <!-- App & fonts End -->
+
+
+
+    <!-- Add this script tag to include Auth0 Lock -->
+    <script src="https://cdn.auth0.com/js/lock/11.31.0/lock.min.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <!-- <script src="https://cdn.auth0.com/js/lock/11.x/lock.min.js"></script>
+    <script src="https://cdn.auth0.com/js/lock/11.x.y/lock.min.js"></script> -->
+    <script src="js/Auth0Lock.js"></script>
+
+
+
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- SEO Start -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="AuroraTV">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="www.auroratv.com">
+    <meta property="og:image" content="img/auroratvlogomainW.png">
+    <meta name="description"
+        content="Aurora Media Group provides innovative media solutions. Aurora Media Group is a Caesar Capital subsidiary that is responsible for media properties, encompassing the streaming network as a whole, as well as day-to-day operation of the company's sports-oriented cable network and other properties such as those shared from other platforms.">
+    <meta name="keywords" content="media, marketing, advertising, Aurora Media Group">
+    <meta name="robots" content="index,follow">
+    <!-- SEO End -->
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+
+        <!-- Nav Start -->
+        <nav class="nav">
+            <a href="/index.html"><img src="img/auroratvlogomainW.png" loading="lazy" alt="Logo" class="logo"></a>
+        </nav>
+        <!-- Nav End -->
+
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <div class="main" style="background-image: url(/img/background/desktop-back2500x2500.jpeg);">
+        <!-- Registration Start -->
+        <div class="container a-container is-txl" id="a-container">
+            <form id="b-form" class="form" method="post" action="">
+                <h2 class="form_title title">Create Account</h2>
+                <!-- <div class="form__icons">
+                    <img class="form__icon" loading="lazy" alt="google"
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 24 24' id='google'%3E%3Cpath d='M22.60229,10.00391a1.00005,1.00005,0,0,0-.98388-.82227H12.2a.99974.99974,0,0,0-1,1V14.0498a.99974.99974,0,0,0,1,1h3.9624a3.65162,3.65162,0,0,1-1.13183,1.1875A5.0604,5.0604,0,0,1,12.2,17.02246a4.93525,4.93525,0,0,1-4.64624-3.4378L7.55347,13.583a4.90382,4.90382,0,0,1,0-3.167l.00024-.00165A4.9356,4.9356,0,0,1,12.2,6.97754,4.37756,4.37756,0,0,1,15.3313,8.19531a1.00053,1.00053,0,0,0,1.39844-.01562L19.5979,5.31152a.99918.99918,0,0,0-.02539-1.43847A10.62342,10.62342,0,0,0,12.2,1,10.949,10.949,0,0,0,2.37134,7.05878l-.00147.00177A10.92175,10.92175,0,0,0,1.2,12a11.07862,11.07862,0,0,0,1.16992,4.93945l.00147.00177A10.949,10.949,0,0,0,12.2,23a10.5255,10.5255,0,0,0,7.29468-2.687l.00073-.00049.00079-.00085.00019-.00013.00006-.00012a10.78575,10.78575,0,0,0,3.30365-8.08386A12.51533,12.51533,0,0,0,22.60229,10.00391ZM12.2,3a8.68219,8.68219,0,0,1,5.2085,1.67285L15.95483,6.126A6.46322,6.46322,0,0,0,12.2,4.97754,6.88648,6.88648,0,0,0,6.21069,8.52832L5.14148,7.69958l-.585-.45367A8.95257,8.95257,0,0,1,12.2,3ZM3.67944,14.90332a9.02957,9.02957,0,0,1,0-5.80664l1.78223,1.38184a6.85381,6.85381,0,0,0,0,3.042ZM12.2,21A8.9528,8.9528,0,0,1,4.5564,16.75391l.37841-.29352,1.27588-.98969A6.88482,6.88482,0,0,0,12.2,19.02246a7.27662,7.27662,0,0,0,3.30573-.75079L17.19739,19.585A8.88989,8.88989,0,0,1,12.2,21Zm6.52588-2.76074-.183-.142L17.16553,17.028a5.60626,5.60626,0,0,0,1.39966-2.79553.9998.9998,0,0,0-.9834-1.18262H13.2V11.18164h7.54883c.03418.3457.05127.69531.05127,1.0459A9.05156,9.05156,0,0,1,18.72583,18.23926Z'%3E%3C/path%3E%3C/svg%3E">
+                    <img class="form__icon" loading="lazy" alt="apple"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIGlkPSJhcHBsZSI+PHBhdGggZD0iTTE1ODUgMTIxNXEtMzkgMTI1LTEyMyAyNTAtMTI5IDE5Ni0yNTcgMTk2LTQ5IDAtMTQwLTMyLTg2LTMyLTE1MS0zMi02MSAwLTE0MiAzMy04MSAzNC0xMzIgMzQtMTUyIDAtMzAxLTI1OS0xNDctMjYxLTE0Ny01MDMgMC0yMjggMTEzLTM3NCAxMTItMTQ0IDI4NC0xNDQgNzIgMCAxNzcgMzAgMTA0IDMwIDEzOCAzMCA0NSAwIDE0My0zNCAxMDItMzQgMTczLTM0IDExOSAwIDIxMyA2NSA1MiAzNiAxMDQgMTAwLTc5IDY3LTExNCAxMTgtNjUgOTQtNjUgMjA3IDAgMTI0IDY5IDIyM3QxNTggMTI2TTEyMDkgNDJxMCA2MS0yOSAxMzYtMzAgNzUtOTMgMTM4LTU0IDU0LTEwOCA3Mi0zNyAxMS0xMDQgMTcgMy0xNDkgNzgtMjU3IDc0LTEwNyAyNTAtMTQ4IDEgMyAyLjUgMTF0Mi41IDExcSAwIDQgLjUgMTB0LjUgMTB6Ij48L3BhdGg+PC9zdmc+Cg==">
+                </div>
+                <span id="name-input" class="form__span">or use email for registration</span>
+                <input class="form__input" type="text" placeholder="Name">
+                <input id="email-input" class="form__input" type="text" placeholder="Email">
+                <input id="password-input" class="form__input" type="password" placeholder="Password"> -->
+                <button id="signup-button" class="form__button button submit signupButton">SIGN UP</button>
+            </form>
+        </div>
+        <!-- Registration End -->
+        <!-- Login Start -->
+        <div class="container b-container is-txl is-z200" id="b-container">
+            <form id="a-form" class="form" method="post" action="">
+                <h2 class="form_title title">Sign in to Website</h2>
+                <!-- <div class="form__icons">
+                    <img class="form__icon" loading="lazy" alt="google"
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 24 24' id='google'%3E%3Cpath d='M22.60229,10.00391a1.00005,1.00005,0,0,0-.98388-.82227H12.2a.99974.99974,0,0,0-1,1V14.0498a.99974.99974,0,0,0,1,1h3.9624a3.65162,3.65162,0,0,1-1.13183,1.1875A5.0604,5.0604,0,0,1,12.2,17.02246a4.93525,4.93525,0,0,1-4.64624-3.4378L7.55347,13.583a4.90382,4.90382,0,0,1,0-3.167l.00024-.00165A4.9356,4.9356,0,0,1,12.2,6.97754,4.37756,4.37756,0,0,1,15.3313,8.19531a1.00053,1.00053,0,0,0,1.39844-.01562L19.5979,5.31152a.99918.99918,0,0,0-.02539-1.43847A10.62342,10.62342,0,0,0,12.2,1,10.949,10.949,0,0,0,2.37134,7.05878l-.00147.00177A10.92175,10.92175,0,0,0,1.2,12a11.07862,11.07862,0,0,0,1.16992,4.93945l.00147.00177A10.949,10.949,0,0,0,12.2,23a10.5255,10.5255,0,0,0,7.29468-2.687l.00073-.00049.00079-.00085.00019-.00013.00006-.00012a10.78575,10.78575,0,0,0,3.30365-8.08386A12.51533,12.51533,0,0,0,22.60229,10.00391ZM12.2,3a8.68219,8.68219,0,0,1,5.2085,1.67285L15.95483,6.126A6.46322,6.46322,0,0,0,12.2,4.97754,6.88648,6.88648,0,0,0,6.21069,8.52832L5.14148,7.69958l-.585-.45367A8.95257,8.95257,0,0,1,12.2,3ZM3.67944,14.90332a9.02957,9.02957,0,0,1,0-5.80664l1.78223,1.38184a6.85381,6.85381,0,0,0,0,3.042ZM12.2,21A8.9528,8.9528,0,0,1,4.5564,16.75391l.37841-.29352,1.27588-.98969A6.88482,6.88482,0,0,0,12.2,19.02246a7.27662,7.27662,0,0,0,3.30573-.75079L17.19739,19.585A8.88989,8.88989,0,0,1,12.2,21Zm6.52588-2.76074-.183-.142L17.16553,17.028a5.60626,5.60626,0,0,0,1.39966-2.79553.9998.9998,0,0,0-.9834-1.18262H13.2V11.18164h7.54883c.03418.3457.05127.69531.05127,1.0459A9.05156,9.05156,0,0,1,18.72583,18.23926Z'%3E%3C/path%3E%3C/svg%3E">
+                    <img class="form__icon" loading="lazy" alt="apple"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIGlkPSJhcHBsZSI+PHBhdGggZD0iTTE1ODUgMTIxNXEtMzkgMTI1LTEyMyAyNTAtMTI5IDE5Ni0yNTcgMTk2LTQ5IDAtMTQwLTMyLTg2LTMyLTE1MS0zMi02MSAwLTE0MiAzMy04MSAzNC0xMzIgMzQtMTUyIDAtMzAxLTI1OS0xNDctMjYxLTE0Ny01MDMgMC0yMjggMTEzLTM3NCAxMTItMTQ0IDI4NC0xNDQgNzIgMCAxNzcgMzAgMTA0IDMwIDEzOCAzMCA0NSAwIDE0My0zNCAxMDItMzQgMTczLTM0IDExOSAwIDIxMyA2NSA1MiAzNiAxMDQgMTAwLTc5IDY3LTExNCAxMTgtNjUgOTQtNjUgMjA3IDAgMTI0IDY5IDIyM3QxNTggMTI2TTEyMDkgNDJxMCA2MS0yOSAxMzYtMzAgNzUtOTMgMTM4LTU0IDU0LTEwOCA3Mi0zNyAxMS0xMDQgMTcgMy0xNDkgNzgtMjU3IDc0LTEwNyAyNTAtMTQ4IDEgMyAyLjUgMTF0Mi41IDExcSAwIDQgLjUgMTB0LjUgMTB6Ij48L3BhdGg+PC9zdmc+Cg==">
+                </div>
+                <span class="form__span">or use your email account</span>
+                <input class="form__input" id="login-email-input" type="text" placeholder="Email">
+                <input class="form__input" id="login-password-input" type="password" placeholder="Password">
+                <a class="form__link">Forgot your password?</a> -->
+                <button id="login-button" onclick="login('/dashboard.html')" class="form__button button submit">SIGN
+                    IN</button>
+                <!-- <button id="login-button" onclick="location.href='/dashboard.html'"
+                    class="form__button button submit">SIGN IN</button> -->
+            </form>
+        </div>
+        <!-- Login End -->
+        <!-- Switch Login/Registration Start -->
+        <div class="switch is-txr" id="switch-cnt">
+            <div class="switch__circle"></div>
+            <div class="switch__circle switch__circle--t"></div>
+            <div class="switch__container" id="switch-c1">
+                <h2 class="switch__title title">Welcome!</h2>
+                <p class="switch__description description">Your streaming channel of tomorrow, today. Start journey with
+                    us!</p>
+                <!-- <p class="switch__description description">If you don't have an account yet, click below and start
+                    journey with us!</p>
+                <button class="switch__button button switch-btn">SIGN UP</button> -->
+            </div>
+            <div class="switch__container is-hidden" id="switch-c2">
+                <h2 class="switch__title title">Hello!</h2>
+                <p class="switch__description description">If you have an account already, sign in and join the future
+                    of
+                    streaming!</p>
+                <button class="switch__button button switch-btn">SIGN IN</button>
+            </div>
+        </div>
+        <!-- Switch Login/Registration End -->
+    </div>
+    <!-- Main End -->
+
+    <!-- Background Blob Start -->
+    <svg class="morphing-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500"
+        style="enable-background:new 0 0 700 500" xml:space="preserve">
+        <!--  Set 1  -->
+        <path data-morph="shape-1" data-morph-targets="shape-2,shape-3"
+            d="M657 58.8c-6.2-11-30.1-13-48.3-5.9-32.2 12.5-32.7 48-59.3 53.4-5.4 1.1-12.8 1.1-38.1-11.9C457.1 66.5 451.6 46 424 37.6c-41.6-12.7-96 13.3-97.4 34.7-1.4 20.2 43.4 49.4 79.6 44 15.7-2.3 22.1-10 30.5-5.9 19.3 9.4.1 56.6 21.2 74.5 14.8 12.6 41 3.4 74.5-8.5 63.4-22.4 94.3-58.2 105-72C648 91 663.8 70.8 657 58.8z" />
+        <path data-morph="shape-2"
+            d="M588.9,36.7c-8.7-6-18.3-15.4-40.7,0c-23.7,16.4,25.4,60.1,6.2,74.9c-8.9,6.9-25.6,3.9-49.4-2.7c-49.6-13.7-77.8-25.6-56.8-43.7c16.9-14.5-17.7-65-27.7-50.1c-21.5,32.2-95.9,32-87.7,61c8.6,30.2,36.3,56.2,60,70.6c19.8,11.9,54.2,19.1,77.9,23.7c59.1,11.6,81.3,29.3,108.7,10.9c46.6-31.4,40.9-81.4,43.3-94.5C626,69.3,615.3,54.9,588.9,36.7z" />
+        <path data-morph="shape-3"
+            d="M670.5,100.4C673,90.7,649.6,67.1,618,49c-25.9-14.8-47.5,10.6-70.9,14.7c-4.8,0.8-17.3,6.2-39.5-3.7C460,38.9,464.2,74.9,440,68.5c-36.6-9.7-83.5-8.5-84.6,22.6c-0.5,15.3-3.1,55.5,28.8,51.4c13.8-1.8,59.6-21.8,67-18.7c16.9,7.1-46,30-27.4,43.5c13.1,9.5,54.7,12.4,84.1,3.4c55.7-17,68.5-27.3,77.9-37.8C595.1,122.6,663.1,129.5,670.5,100.4z" />
+
+        <!--  Set 2  -->
+        <path data-morph="shape-4" data-morph-targets="shape-5,shape-6"
+            d="M221.9,135.4c13.7-8,81.8,30.9,89.2,76.5c7.4,45.6-16.6,48.4-0.4,82.1c5.8,12-30.7,21.8-48.7-7s-29.8-77.6-44.1-95.2C203.6,174.1,202.7,146.7,221.9,135.4z" />
+        <path data-morph="shape-5"
+            d="M291.5,286.6c-30.8-21.2,55.9-40.8,76.7-67.1c17.5-22.2-112.1-70.7-141.8-63.6c-17.7,4.2,11.1,35.9,25.4,53.6c14.3,17.6-99.2,5.1-80.1,33.2C192.1,272.7,335.9,317.1,291.5,286.6z" />
+        <path data-morph="shape-6"
+            d="M336.5,323.1c13.5-36.5,28.9-22.8,21.5-68.3s28.1-79.7,2.4-78.5c-23.9,1.1-38,27-47.8,47.4c-8.2,17.2-52.7-2.7-33.6,25.4C299.4,279.1,317.8,373.6,336.5,323.1z" />
+
+        <!--  Set 3  -->
+        <path data-morph="shape-7" data-morph-targets="shape-8,shape-9"
+            d="M96.5,18.8c11.2,23,13,56.8,1.7,95.2s11.9,17.3,29.4,21.6c17.5,4.3-20.9,80.6-42.9,67.6s-6.8-44.9-22.6-73.6s-30.9-16.1-37.3-40.8C12.3,40.8,76.7-21.9,96.5,18.8z" />
+        <path data-morph="shape-8"
+            d="M172.7,15.7c11.2,23-56,43.3-68.1,67.5c-17.8,35.8,39.4,41.1,37.6,59c-2.3,22.6-35.6,59.9-57.6,46.9c-22-13-2.3-32.3-18.1-61s-24.4-18.7-30.8-43.5C23.4,36.6,153-25,172.7,15.7z" />
+        <path data-morph="shape-9"
+            d="M180.8,62.7c11.2,23-16.6,18.2-28.6,42.4c-17.8,35.8-33.2,28.5-35,46.4c-2.3,22.6-28,45.6-50.1,32.6c-22-13,4.3-45.2-11.5-73.9s7.3-29.9,0.9-54.7C44.2,7.6,161.1,22,180.8,62.7z" />
+
+        <!--  Set 4  -->
+        <path data-morph="shape-10" data-morph-targets="shape-8,shape-9"
+            d="M96.5,18.8c11.2,23,13,56.8,1.7,95.2s11.9,17.3,29.4,21.6c17.5,4.3-20.9,80.6-42.9,67.6s-6.8-44.9-22.6-73.6s-30.9-16.1-37.3-40.8C12.3,40.8,76.7-21.9,96.5,18.8z" />
+        <path data-morph="shape-11"
+            d="M172.7,15.7c11.2,23-56,43.3-68.1,67.5c-17.8,35.8,39.4,41.1,37.6,59c-2.3,22.6-35.6,59.9-57.6,46.9c-22-13-2.3-32.3-18.1-61s-24.4-18.7-30.8-43.5C23.4,36.6,153-25,172.7,15.7z" />
+        <path data-morph="shape-12"
+            d="M180.8,62.7c11.2,23-16.6,18.2-28.6,42.4c-17.8,35.8-33.2,28.5-35,46.4c-2.3,22.6-28,45.6-50.1,32.6c-22-13,4.3-45.2-11.5-73.9s7.3-29.9,0.9-54.7C44.2,7.6,161.1,22,180.8,62.7z" />
+    </svg>
+    <!-- Background Blob End -->
+
+    <!-- Add your site or application content here -->
+    <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script> -->
+
+    <!-- Add this script tag to include Auth0 Lock -->
+    <script src="https://cdn.auth0.com/js/lock/11.31.0/lock.min.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <!-- <script src="https://cdn.auth0.com/js/lock/11.x/lock.min.js"></script>
+    <script src="https://cdn.auth0.com/js/lock/11.x.y/lock.min.js"></script> -->
+    <script src="js/login.js"></script>
+    <!-- <script src="js/Auth0Lock.js"></script> -->
+
+    <!-- Login and Registration JS Start -->
+    <!-- <script>
+    </script> -->
+    <!-- Login and Registration JS End -->
+
+    <!-- Signup Alert Start -->
+    <!-- <script>
+        // Get the button by its id
+        var button = document.getElementById("signupButton");
+
+        // Add a click event listener to the button
+        button.addEventListener("click", function (event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            // Show an alert
+            alert("User registered!");
+        });
+    </script> -->
+
+    <!-- Signup Alert End -->
+
+    <!-- Firebase Start -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDU-i-G3-tJ7AHuEcdnLn-xlowbQdxyOdM",
+            authDomain: "auroratelevisionorg.firebaseapp.com",
+            projectId: "auroratelevisionorg",
+            storageBucket: "auroratelevisionorg.appspot.com",
+            messagingSenderId: "801515496273",
+            appId: "1:801515496273:web:2361810bbfc3b3e94a2970",
+            measurementId: "G-VVRB5HENYN"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <!-- Firebase End -->
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

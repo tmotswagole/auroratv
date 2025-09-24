@@ -1,0 +1,377 @@
+:root {
+  --bg: #edf2f0;
+  --neu-1: #ecf0f3;
+  --neu-2: #d1d9e6;
+  --white: #f9f9f9;
+  --gray: #a0a5a8;
+  --black: #000;
+  --aurora-blue: #080bc9;
+  --aurora-green: #54d748;
+  --transition: 1.25s;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  background: var(--black);
+  color: var(--white);
+}
+
+/*========== HEADER ================*/
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 600px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  position: relative;
+}
+
+.logo {
+  width: 170px;
+  cursor: pointer;
+}
+
+nav button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.africa-button {
+  display: block;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  height: auto;
+}
+
+.africa-button img {
+  width: 50px;
+}
+
+/*========== Hamburger Menu ================*/
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--white);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+
+.ham8.active .middle {
+  transform: rotate(90deg);
+}
+
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+#hamburger-menu {
+  display: none;
+  height: 190px;
+  width: 200px;
+  background: var(--black);
+  position: fixed;
+  top: 32px;
+  left: 141px;
+  z-index: 101;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#hamburger-menu .nav {
+  display: block;
+  padding: 10px;
+  z-index: 101;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#hamburger-menu .nav a {
+  display: block;
+  padding: 10px;
+  height: 1em;
+  color: #ccc;
+  font-size: 1em;
+  line-height: 1em;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#hamburger-menu .nav a:hover {
+  cursor: pointer;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.02);
+  transform: scale(1.08);
+}
+
+/*========== Banner Silder ================*/
+
+.slide {
+  position: relative;
+}
+
+.banner {
+  z-index: -1;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.banner .row {
+  margin-left: -40px;
+  margin-top: -10px;
+}
+
+ul .bannerSlider {
+  padding: 0;
+}
+
+.bannerSlider {
+  height: 100%;
+}
+
+.bannerSlider .slide__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.7);
+}
+
+.bannerSlider .slick-slide {
+  position: relative;
+}
+
+.bannerSlider .slide__image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+img.slide__image__top-position {
+  object-position: center bottom;
+}
+
+.slide__image {
+  position: relative;
+  z-index: -1;
+}
+
+.bannerSlider .slide__text {
+  position: absolute;
+  width: 100px;
+  color: var(--white);
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 30%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bannerSlider .slide__text img {
+  width: 200px;
+}
+
+.bannerSlider .slide__text h2 {
+  font-size: 30px;
+  color: #fff;
+  width: 400px;
+  z-index: 100;
+}
+
+.bannerSlider .slide__text h4 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  width: 500px;
+  z-index: 100;
+}
+
+/*========== Menu Rows ================*/
+
+.main {
+  z-index: 1;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  top: 560px; /* You can adjust this value to set where the blend starts */
+  left: 0;
+  right: 0;
+  height: 40px; /* This sets the blend height */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--black));
+}
+
+.row-poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 15px;
+}
+
+/* .redirect,
+.redirect:link,
+.redirect:visited,
+.redirect:hover,
+.redirect:active {
+  display: inline-block;
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  height: 100%;
+  width: 100%;
+} */
+
+.row-poster:hover {
+  transform: scale(1.3);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-posterLarge {
+  max-height: 300px;
+}
+
+.row-posterLarge:hover {
+  transform: scale(1.1);
+}
+
+.main .row {
+  color: var(--white);
+  margin-left: 20px;
+}
+
+/*========== RESPONSIVE DESIGN ================*/
+
+@media (max-width: 600px) {
+  .bannerSlider .slide__text img {
+    width: 150px;
+  }
+
+  .bannerSlider .slide__text h2 {
+    width: 300px;
+  }
+
+  .bannerSlider .slide__text h4 {
+    width: 400px;
+  }
+}
+
+/* CSS for 688x1031 */
+@media (min-width: 688px) and (min-height: 1031px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 393x786 */
+@media (min-width: 393px) and (min-height: 786px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 414x896 */
+@media (min-width: 414px) and (min-height: 896px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 375x812 */
+@media (min-width: 375px) and (min-height: 812px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 412x846 */
+@media (min-width: 412px) and (min-height: 846px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 1024x800 */
+@media (min-width: 1024px) and (min-height: 800px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 360x740 */
+@media (min-width: 360px) and (min-height: 740px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 414x736 */
+@media (min-width: 414px) and (min-height: 736px) {
+  /* Add your CSS rules for this screen size */
+}
+
+/* CSS for 768x1024 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  /* Add your CSS rules for this screen size */
+}

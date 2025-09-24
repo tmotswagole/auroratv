@@ -1,0 +1,360 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>AuroraTV</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Favicon and Logo Start -->
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <!-- Favicon & Logo End -->
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- App & fonts Start -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/font-awesome/css/font-awesome.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the Slick-theme CSS if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <!-- App & fonts End -->
+
+    <!-- <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script> -->
+
+    <!-- Add this script tag to include Auth0 Lock -->
+    <script src="https://cdn.auth0.com/js/lock/11.31.0/lock.min.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script src="js/Auth0Lock.js"></script>
+
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- SEO Start -->
+    <meta property="og:title" content="AuroraTV">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="www.auroratv.com">
+    <meta property="og:image" content="img/auroratvlogomainW.png">
+    <meta name="description"
+        content="Aurora Media Group provides innovative media solutions. Aurora Media Group is a Caesar Capital subsidiary that is responsible for media properties, encompassing the streaming network as a whole, as well as day-to-day operation of the company's sports-oriented cable network and other properties such as those shared from other platforms.">
+    <meta name="keywords" content="media, marketing, advertising, Aurora Media Group">
+    <meta name="robots" content="index,follow">
+    <!-- SEO End -->
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+
+        <!-- Nav Start -->
+        <nav class="nav">
+
+            <svg class="ham hamRotate ham8" id="menu-button" viewBox="0 0 100 100" width="80"
+                onclick="this.classList.toggle('active')">
+                <path class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+
+            <div id="hamburger-menu">
+                <div class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="payment.html">Payment</a>
+                    <a onclick="logout()">Logout</a>
+                </div>
+            </div>
+
+            <img src="img/auroratvlogomainWL.png" loading="lazy" alt="Logo" class="logo">
+
+            <div class="header-buttons">
+                <button class="africa-button">
+                    <img src="img/africa.png" loading="lazy" alt="arrowdown-button">
+                </button>
+            </div>
+
+        </nav>
+        <!-- Nav End -->
+
+        <!-- Banner Silder Start -->
+        <div class="banner">
+
+            <div class="row fullwidth">
+
+                <div class="col-md-12">
+
+                    <ul class="bannerSlider">
+
+                        <!--  1. slide  -->
+                        <li class="slide">
+
+                            <a href="#">
+
+                                <div class="slide__text">
+                                    <img src="img/images/black history month.png" class="blur-load" loading="lazy"
+                                        alt="" />
+                                    <h2>The African Queen</h2>
+                                    <h4>Witness the resilience and grace of the African woman in this transformative
+                                        documentary series. Immerse yourself in these awe-inspiring stories today.
+                                    </h4>
+                                </div>
+
+                                <div class="slide__image blur-load">
+                                    <img src="img/banner/woman-scarf.jpg" loading="lazy" alt="" />
+                                </div>
+
+                            </a>
+
+                        </li>
+
+                        <!--  2. slide  -->
+                        <li class="slide">
+
+                            <a href="#">
+
+                                <div class="slide__text">
+                                    <img src="img/images/black history month.png" class="blur-load" loading="lazy"
+                                        alt="" />
+                                    <h2>Bullets in Dust</h2>
+                                    <h4>Experience Abdo's struggle, a Sudanese boy caught in war, his soul at stake,
+                                        fighting for his family's survival. This potent saga will challenge your
+                                        perceptions.</h4>
+                                </div>
+
+                                <div class="slide__image blur-load">
+                                    <img src="img/banner/sudan-guns.jpg" loading="lazy" alt="" />
+                                </div>
+
+                            </a>
+
+                        </li>
+
+                        <!--  3. slide  -->
+                        <li class="slide">
+
+                            <a href="#">
+
+                                <div class="slide__text">
+                                    <img src="img/images/black history month.png" class="blur-load" loading="lazy"
+                                        alt="" />
+                                    <h2>Documentary of a Father</h2>
+                                    <h4>Embark on a journey with an Ethiopian man balancing 21st-century demands and
+                                        ancestral traditions. Witness this profound, transformative narrative today.
+                                    </h4>
+                                </div>
+
+                                <div class="slide__image blur-load">
+                                    <img src="img/banner/man stick.jpg" loading="lazy" alt="" />
+                                </div>
+
+                            </a>
+
+                        </li>
+
+                        <!--  4. slide  -->
+                        <li class="slide">
+
+                            <a href="#">
+
+                                <div class="slide__text">
+                                    <img src="img/images/black history month.png" class="blur-load" loading="lazy"
+                                        alt="" />
+                                    <h2>City Boys</h2>
+                                    <h4>Dive into Hendrix's electrifying world, straddling academia and romance.
+                                        Experience this riveting coming-of-age journey, right here, right now.</h4>
+                                </div>
+
+                                <div class="slide__image blur-load">
+                                    <img src="img/banner/kid-city.jpg" loading="lazy" alt="" />
+                                </div>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Banner Silder End -->
+
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+
+    <div class="main">
+        <!-- Aurora Originals Start -->
+        <div class="row">
+
+            <h2>Aurora Originals</h2>
+
+            <div class="row-posters">
+
+                <img src="img/images/thumbnails/Blue Horror Movie Poster.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/Elemental.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/enchanted.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/fen.png" loading="lazy" alt="" class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/indomitable.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/shaman.png" loading="lazy" alt="" class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/Red And Black Horror Movie Poster.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/shaman.png" loading="lazy" alt="" class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/Blue Horror Movie Poster.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/Elemental.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/enchanted.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/fen.png" loading="lazy" alt="" class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/indomitable.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/shaman.png" loading="lazy" alt="" class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/Red And Black Horror Movie Poster.png" loading="lazy" alt=""
+                    class="row-poster row-posterLarge" />
+                <img src="img/images/thumbnails/shaman.png" loading="lazy" alt="" class="row-poster row-posterLarge" />
+
+            </div>
+
+        </div>
+        <!-- Aurora Originals End -->
+
+        <!-- Trending Now Start -->
+        <div class="row">
+
+            <h2>Trending Now</h2>
+
+            <div class="row-posters">
+
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+                <img src="img/images/coming-soon500x500(3840x2160px).gif" loading="lazy" alt="" class="row-poster" />
+
+            </div>
+
+        </div>
+        <!-- Trending Now End -->
+
+    </div>
+    <!-- Main End -->
+
+    <!-- Add your site or application content here -->
+    <!-- JQuery and Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <!-- Hamburger Start -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.querySelector('#menu-button');
+            var menu = document.querySelector('#hamburger-menu');
+
+            button.addEventListener('click', function (e) {
+                if (button.classList.contains('active')) {
+                    menu.style.display = 'block';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!button.contains(e.target)) {
+                    button.classList.remove('active');
+                    menu.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <!-- Hamburger End -->
+
+    <!-- Firebase Start -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDU-i-G3-tJ7AHuEcdnLn-xlowbQdxyOdM",
+            authDomain: "auroratelevisionorg.firebaseapp.com",
+            projectId: "auroratelevisionorg",
+            storageBucket: "auroratelevisionorg.appspot.com",
+            messagingSenderId: "801515496273",
+            appId: "1:801515496273:web:2361810bbfc3b3e94a2970",
+            measurementId: "G-VVRB5HENYN"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <!-- Firebase End -->
+
+    <!-- Redirect To Details Page Start -->
+    <script>
+        var images = document.getElementsByClassName("row-poster");
+        for (var i = 0; i < images.length; i++) {
+            images[i].addEventListener("click", function () {
+                window.location.href = "details.html";
+            });
+        }
+    </script>
+    <!-- Redirect To Details Page End -->
+
+    <!-- Banner Slider Script Start -->
+    <script>
+        $(document).ready(function () {
+            $(".bannerSlider").slick({
+                dots: false,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false
+            });
+        });
+    </script>
+    <!-- Banner Slider Script End -->
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
